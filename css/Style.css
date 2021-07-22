@@ -1,0 +1,112 @@
+.light-container {
+    border-radius: 10px;
+    background-color: dimgrey;
+    padding: 15px 30px;
+    width: 100px;
+    height: 254px;
+    margin: 0 auto;
+    text-align: center;
+    border: 4px solid black;
+}
+
+.lights {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 1.7em;
+}
+
+.light {
+    border-radius: 50%;
+    width: 59px;
+    height: 57px;
+    transition: 0.5s background-color ease-in-out;
+    background-color: #333;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.light:not(:last-child) {
+    margin-bottom: 0.85em;
+}
+
+.lights.stop .light.red {
+    background-color: red;
+}
+
+.lights.slow .light.yellow {
+    background-color: yellow;
+}
+
+.lights.go .light.green {
+    background-color: green;
+}
+
+.lights.off .light {
+    background-color: #333;
+}
+
+.change-light {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+
+
+.click {
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+
+.container {
+    text-align: center;
+}
+
+#box5 {
+    display: none;
+}
+
+.box5__content {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#banner {
+    width: 100%;
+}
+
+.close {
+    display: none;
+    font-weight: bold;
+    color: #f1e3ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin: 15px;
+    background-color: #cfd5a55e;
+    cursor: pointer;
+}
+
+.time {
+    display: none;
+    color: #a89881;
+    font-weight: bold;
+    font-size: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+}
